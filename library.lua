@@ -2772,7 +2772,7 @@ function library:Load(options)
 
 
     function library:UpdateTitle(NewName)
-        name = NewName
+        name.Text = NewName
     end
 
     self.currenttheme = theme

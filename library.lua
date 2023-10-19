@@ -1,4 +1,7 @@
---// CUSTOM DRAWING
+--[[
+            capi.wtf ui lib
+i did not make this but i will most likely make changes.
+]]
 
 local drawing = {} do
     local services = setmetatable({}, {
@@ -2769,11 +2772,6 @@ function library:Load(options)
     local overrides = options.themeoverrides or {}
     local folder = options.folder
     local extension = options.extension
-
-
-    function library:UpdateTitle(NewName)
-        name.Text = NewName
-    end
 
     self.currenttheme = theme
     self.theme = table.clone(themes[theme])
